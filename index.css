@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.cart-title {
+  font-weight: 400;
+}
+
+h1
+{
+  font-family:Candara;
+  text-align:center;
+  color: Gray;
+  /*border: 4px double white;*/
+  border-radius: audio;
+  text-shadow: 2px 2px 5px Gray;
+  display: block;
+}
+
+h4
+{
+  font-family:Candara;
+  color: #33FFB7;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 9px;
+}
+
+a{font-family:courier; color:#FFFFFF; text-decoration: none;}
+a:link{color: #33FFB7; background-color: transparent;}
+a:visited{color: MediumSeaGreen; background-color: transparent; text-decoration: underline;}
+a:hover{color: #33FFB7; background-color: transparent; text-decoration: underline;}
+
+.container{ width: 100%; height: auto;}
+
+.header
+{
+  width: 100%;
+  height: 150px;
+  font-family:Candara;
+  text-align:center;
+  color: grey;  
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+
+}
+
+.logo
+{
+  width: 150px;
+  height: 100px;
+  float: left;
+  border-radius:20px;
+}
+
+.nav
+{
+  width: 300px;
+  height: auto;
+  background-color: #33FFB7;
+  font-family:Candara;
+  text-align:center;
+  color:LightGray;
+  border-radius:20px;
+  /*border: 4px double white;*/
+  float: left;
+  clear:inherit;
+}
+
+#ESCRIBIR_SERIE
+{
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+  display: inline;
+  font-family:Candara;
+}
+
+#BOTON_ENVIAR
+{
+  width: 70px;
+  height: 23px;
+  font-size: 12px;
+  border-radius: 5px;
+  font-family: Candara;
+}
+
+.bloquedebox
+{
+  width: 80%;
+  height: auto;
+  /*width: 860px;*/
+}
+
+.footer
+{
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
+  color: #33FFB7;
+}
+
+#hora
+{
+  font-size: 40px;
+  text-align: center;
+}
+
+.main
+{
+  width: 100%;
+  height: auto;
+}
