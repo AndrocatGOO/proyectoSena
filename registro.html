@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Página para comprar piedras semi-preciosas.">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/registro.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <title>Piedras semi-preciosas</title>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="header">
+                <header>
+                    <div class="nav">
+                        <nav>
+                        <h1>Registro Usuario</h1>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+
+            <div class="main">
+                <main>
+                    <form action="registro.php" method="POST">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+                            <small id="firstNameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+                            <small id="lastNameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>    
+                        <div class="form-group">
+                            <label for="emailAdress">Email Address</label>
+                            <input type="email" class="form-control" id="emailAdress" name="emailAdress" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                            <small id="emailAdressHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="password1">Password</label>
+                            <input type="password" class="form-control" id="password1" name="password1" placeholder="Password">
+                            <small id="password1Help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="password2">Repest Password</label>
+                            <input type="password" class="form-control" id="password2" name="password2" placeholder="Password">
+                            <small id="password2Help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="checkbox">
+                            <label class="form-check-label" for="checkbox">Terms and Conditions</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit" name="checkIn">Submit</button>
+                    </form>
+                </main>
+            </div>
+        </div>
+
+        <div class="footer">
+            <hr>
+            <footer></footer>
+            <br>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    </body>
+</html>

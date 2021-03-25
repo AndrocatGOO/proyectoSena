@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+
+.cart-title {
+  font-weight: 400;
+}
+
+.container{ 
+  width: 100%; 
+  height: auto;
+  padding: 0px;
+}
+
+.header
+{
+  width: 100%;
+  height: 100px;
+  color: #212529;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+header
+{
+  width: 100%;
+  height: 100px;
+  color: #212529;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  align-items: center;
+}
+
+.nav
+{
+  width: 100%;
+  height: 100px;
+  color: #212529;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  color: #212529;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  text-align: center;
+}
+
+h1 {
+  line-height: 100px;
+}
+
+.footer
+{
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid white;
+  border-radius: .25rem;
+}
+
+.main
+{
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.card {
+  float: left;
+  width: calc(100% / 5);
+  height: 10 rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-img-top {
+  width: 13rem;
+  height: 10rem;
+}
