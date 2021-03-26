@@ -4,7 +4,7 @@
     $usuario = "root";
     $clave = "";
     $dataBase = "proyectosena";
-    $link = mysqli_connect($servidor, $usuario, $clave, $dataBase);    
+    $link = mysqli_connect($servidor, $usuario, $clave, $dataBase);
 
     if(!$link) {
         echo 'Error en la conexión al servidor.';
@@ -64,7 +64,7 @@
                             if ($numRows < 1) {
                                 echo "<tr><td>Sin registros</td><tr>";
                             } else {
-                                for ($i = 0; $i <= $rows; $i++) { 
+                                for ($i = 0; $i <= $rows; $i++) {
                                 echo "<tr><td>$rows[0]</td>
                                         <td>$rows[1]</td>
                                         <td>$rows[2]</td>
@@ -73,7 +73,7 @@
                                         <td>$rows[5]</td>
                                     </tr>";
                                     $rows = mysqli_fetch_array($runQuery);
-                                }    
+                                }
                             }
                         }
 
@@ -139,7 +139,7 @@
         $nombre = $_POST['productName'];
         $precio = $_POST['productPrice'];
         $stock = $_POST['stock'];
-        $description = $_POST['description'];    
+        $description = $_POST['description'];
 
         // Ingresar la información a la tabla de datos.
         $insertData = "INSERT INTO productos VALUES('', '$category', '$nombre', '$precio', '$stock', '$description')";

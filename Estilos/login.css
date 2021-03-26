@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+:root{
+    --negro:#000000;
+    --rosa-oscuro:#a00098;
+    --rosa: #d13770;
+    --rosa-claro:hsl(332, 85%, 65%);
+    --verde-claro:#03a696;
+    --verde-oscuro:#02735e;
+    --blanco:#f2f2f2;
+    --gris:#eaeaea;
+}
+
+body{
+    background-image: url(../Imagenes/fondo_login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+width: 100%;
+max-width: 800px;
+margin: auto;
+position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 75, 201, 0.747);
+}
+
+.caja__trasera div{
+    margin:100px 40px;
+    color: var(--blanco);
+    transition: all 500ms;
+}
+
+.caja__trasera div p,
+.caja__trasera div button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 14px ;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background-color: #ffffff;
+    color:var(--rosa-claro);
+}
+
+/*formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: #25d2d8;
+    position: absolute;
+    border-radius: 20px;
+}
+
+
+
