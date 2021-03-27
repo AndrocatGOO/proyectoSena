@@ -32,6 +32,11 @@ main{
     margin-top: 100px;
 }
 
+.header{
+    height: 100px;
+    color: #a00098;
+}
+
 .contenedor__todo{
 width: 100%;
 max-width: 800px;
@@ -93,7 +98,7 @@ color: #000000;
     top: -185px;
     left: 15px;
 
-    transition: left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: left 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .contenedor__login-register form{
@@ -150,7 +155,7 @@ color: #000000;
 /*responsive designe*/
 
 @media screen and (max-width: 850 px){
-    main{
+    #main{
         margin-top: 50px;
     }
     .caja__trasera{
