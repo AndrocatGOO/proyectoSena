@@ -2,7 +2,7 @@ document.getElementById("btn__iniciar-sesion").addEventListener("click",inisiarS
 document.getElementById("btn__registrarse").addEventListener("click",register);
 
 //animacionlogeo-register
-//varibles
+    //varibles
 
 var contenedor_login_register=document.querySelector(".contenedor__login-register");
 var formulario_login=document.querySelector(".formulario__login");
