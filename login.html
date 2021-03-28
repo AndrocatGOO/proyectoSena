@@ -86,14 +86,14 @@
             <div class="contenedor__login-register">
                 <form action="" class="formulario__register">
                     <h2>Registrarse</h2>
-                    <input type="text" placeholder="Nombre Completo">
-                    <input type="text" placeholder="Apellido Completo">
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="text" placeholder="Nombre de Usuario">
-                    <input type="password" placeholder="Contraseña">
-                    <input type="password" placeholder="Repite la Contraseña">
+                    <input type="text" name="nombre" placeholder="Nombre Completo" class="input-48" required>
+                    <input type="text" name="apellidos" placeholder="Apellido Completo" class="input-48" required>
+                    <input type="email" name="correo" placeholder="Correo Electronico" class="input-100" required>
+                    <input type="text" name="usuario" placeholder="Nombre de Usuario" class="input-48" required>
+                    <input type="password" name="clave" placeholder="Contraseña" class="input-48" required>
+                    <input type="password" name="clave" placeholder="Repite la Contraseña" class="input-48" required>
                     <div class="checkbox">
-                        <input type="checkbox" name="confirmar_terms" class="checkbox_box"><span class="terminos">Aceptar los <a style="color:blue;" href="#">Términos y Condiciones</a></span>
+                        <input type="checkbox" name="confirmar_terms" class="checkbox_box" required><span class="terminos">Aceptar los <a style="color:blue;" href="#">Términos y Condiciones</a></span>
                     </div>
                     <div class="button-register">
                         <button>Registrarse</button>
