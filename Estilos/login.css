@@ -10,7 +10,7 @@
     --negro:#000000;
     --rosa-oscuro:#a00098;
     --rosa: #d13770;
-    --rosa-claro:hsl(332, 85%, 65%);
+    --rosa-claro:rgb(255, 0, 191);
     --verde-claro:#03a696;
     --verde-oscuro:#02735e;
     --blanco:#f2f2f2;
@@ -18,7 +18,7 @@
 }
 
 body{
-    background-image: url(../Imagenes/fondo_login.jpg);
+    background-image: url(https://inforprintsantander.es/wp-content/uploads/2016/05/Fondo-oscuro-web-inforprint-santander.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -31,6 +31,239 @@ main{
     margin: auto;
     margin-top: 100px;
 }
+
+/*navbar_1*/
+
+.navbar_1{
+    background: var(--negro);
+    padding: 10px 40px 10px 70px;
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+}
+
+.navbar_1 ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar_1 ul img.logo{
+
+}
+
+.navbar_1 ul li.search-icon{
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 5px;
+}
+
+.navbar_1 ul li.search-icon input{
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    border-radius: 5px 0 0 5px;
+    color: rgb(255, 255, 255);
+}
+
+
+/*navbar 2*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #3498db; 
+}
+
+.nav {
+    width: 550px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+}
+
+/* Navigation */
+
+.nav {
+    font-family: Georgia, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.nav-items {
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-link,
+.nav-link:link, 
+.nav-link:visited, 
+.nav-link:active,
+.submenu-link,
+.submenu-link:link, 
+.submenu-link:visited, 
+.submenu-link:active {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+.nav-link,
+.nav-link:link, 
+.nav-link:visited, 
+.nav-link:active {
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(0,0,0,0.2);
+    opacity: 0;
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::before {
+    opacity: 1;
+    -webkit-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .nav-link {
+    padding-right: 15px;
+    height: 17px;
+    line-height: 17px;
+}
+
+.dropdown .nav-link::after {
+    content: "";
+    position:absolute;
+    top: 6px;
+    right: 0;
+    border: 5px solid transparent;
+    border-top-color: #fff;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 100;
+    width: 200px;
+    margin-left: -100px;
+    background: #fff;
+    border-radius: 3px;
+    line-height: 1.46667;
+    margin-top: -5px;
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
+    opacity:0;
+    -webkit-transform: translate(0, 0) scale(.85);
+    transform: translate(0, 0)scale(.85);
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+    pointer-events: none;
+}
+
+.submenu::after, 
+.submenu::before {
+    content: ""; 
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    height: 0;
+}
+
+.submenu::after {
+    border-bottom-color: #fff;
+}
+
+.submenu::before {
+    margin-left: -13px;
+    border: 13px solid transparent;
+    border-bottom-color: rgba(0,0,0,.1);
+    -webkit-filter:blur(1px);
+    filter:blur(1px);
+}
+
+.submenu-items {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.submenu-item {
+    display: block;
+    text-align: left;
+}
+
+.submenu-link,
+.submenu-link:link, 
+.submenu-link:visited, 
+.submenu-link:active {
+    color: #3498db;
+    padding: 10px 20px;
+}
+
+.submenu-link:hover {
+    text-decoration: underline;
+}
+
+.submenu-seperator {
+    height: 0;
+    margin: 12px 10px;
+    border-top: 1px solid #eee;
+}
+
+.show-submenu .submenu {
+    opacity: 1;
+    -webkit-transform: translate(0, 25px) scale(1);
+    transform: translate(0, 25px) scale(1);
+    pointer-events: auto;
+}
+
+
+
+
+
+
+/*body*/
 
 .header{
     height: 100px;
@@ -50,8 +283,8 @@ position: relative;
     display: flex;
     justify-content: center;
     backdrop-filter: blur(10px);
-    background-color: hsla(147, 57%, 61%, 0.705);
-    border: 2px solid rgb(36, 100, 63);
+    background-color: hsla(180, 100%, 50%, 0.61);
+    --border: 2px solid rgba(255, 0, 191, 0.644);
 }
 
 .caja__trasera div{
@@ -87,7 +320,14 @@ background: rgb(255, 255, 255);
 color: #000000;
 }
 
-/* formularios */
+/* ---------------formularios------------------- */
+
+/*color al pasar el mouse el login o register*/
+.contenedor__login-register button:hover{
+    background: #00ffe554;
+    color:rgb(0, 0, 0);
+}
+
 
 .contenedor__login-register{
     display: flex;
@@ -103,11 +343,11 @@ color: #000000;
 
 .contenedor__login-register form{
     width: 100%;
-    padding: 80px 20px;
-    background-color: #caffd7;
+    padding: 60px 20px;
+    background-color: #ffffff;
     position: absolute;
     border-radius: 20px;
-    border: 2px solid rgb(84, 146, 148);
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .contenedor__login-register form h2{
@@ -122,20 +362,58 @@ color: #000000;
     margin-top: 20px;
     padding: 10px;
     border: none;
-    background:#ffffff;
+    background:#dbdbdb;
     font-size: 16px;
     outline: none;
 }
 
+
+.contenedor__login-register form p{
+    font-size: 17px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
 .contenedor__login-register form button{
     padding:10px 40px;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 14px;
-    background: floralwhite;
+    background: rgb(255, 255, 255);
     color: #000000;
-    border: 2px solid #fff;
+    border: 2px solid rgb(0, 217, 255);
     cursor: pointer;
     outline: none;
+    margin-bottom: -60px;
+}
+
+.checkbox{
+    margin-left: -100px;
+}
+
+.checkbox_box{
+    margin-left: -100px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+}
+
+.checkbox span{
+    margin-left: -200px;
+}
+
+
+
+.button-register{
+    margin: 27%;
+    margin-top: -10px;
+    margin-bottom: -30px;
+}
+
+.button-login{
+    margin: 32%;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .contenedor__login-register p{
@@ -148,14 +426,18 @@ color: #000000;
     display: block;
 }
 
+
+
 .formulario__register{
     display: none;
+
 }
 
-/*responsive designe*/
+
+/*responsive designe-----------no sirve... aun qwq*/
 
 @media screen and (max-width: 850 px){
-    #main{
+    main{
         margin-top: 50px;
     }
     .caja__trasera{

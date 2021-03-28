@@ -5,7 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Y Registro-Maria Teresa Vahos</title>
     <link rel="stylesheet" href="estilos/login.css">
+    <script src="https://https://kit.fontawesome.com/a076d05399.js"></script>  <!--ayuda para la topbar-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
+<header>
+    <div class="navbar_1">
+        <ul>
+            <img src="https://cdn.discordapp.com/attachments/818636085894053909/818636238247690291/log_nombre_sin_fondo_1k.png" width="80px" height="80px" class="logo">
+            <li class="search-icon">
+                <input type="search" placeholder="search">
+                <span class="bi bi-search"></span>
+            </li>
+            <div class="items">
+                <li><a href="#">Mi cuenta</a></li>
+                <li><a href="#">Carrito</a></li>
+            </div>
+        </ul>
+    </div>
+    <nav role="navigation" class="nav">
+    <ul class="nav-items">
+        <li class="nav-item">
+            <a href="#" class="nav-link"><span>Inicio</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link"><span>Categorias</span></a>
+            <nav class="submenu">
+                <ul class="submenu-items">
+                    <li class="submenu-item"><a href="#" class="submenu-link">categoria #1</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">categoria #2</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">categoria #3</a></li>
+                </ul>
+            </nav>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link"><span>Catalogo</span></a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link"><span>Ofertas</span></a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link"><span>Mi Carrito</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link"><span>MAS</span></a>
+            <nav class="submenu">
+                <ul class="submenu-items">
+                    <li class="submenu-item"><a href="#" class="submenu-link">Compras</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">Ayuda</a></li>
+                    <li class="submenu-item"><hr class="submenu-seperator" /></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">Sobre nosotros</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">Hubicacion</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">terminos y condiciones</a></li>
+                </ul>
+            </nav>
+        </li>
+    </ul>
+    </nav>
+</header>
 <body>
     <main>
         <div class="header">
@@ -27,22 +86,27 @@
             <div class="contenedor__login-register">
                 <form action="" class="formulario__register">
                     <h2>Registrarse</h2>
-                    <input type="text" placeholder="Nombre completo">
-                    <input type="text" placeholder="Apellido completo">
+                    <input type="text" placeholder="Nombre Completo">
+                    <input type="text" placeholder="Apellido Completo">
                     <input type="text" placeholder="Correo Electronico">
-                    <input type="text" placeholder="Nombre De Usuario">
-                    <input type="password" placeholder="contraseña">
-                    <input type="password" placeholder="Repite la contraseña">
-                    <a>Acepto terminos y condiciones</a>
-                    <input type="checkbox" id="checkbox">
-                    <button>Registrase</button>
+                    <input type="text" placeholder="Nombre de Usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <input type="password" placeholder="Repite la Contraseña">
+                    <div class="checkbox">
+                        <input type="checkbox" name="confirmar_terms" class="checkbox_box"><span class="terminos">Aceptar los <a style="color:blue;" href="#">Términos y Condiciones</a></span>
+                    </div>
+                    <div class="button-register">
+                        <button>Registrarse</button>
+                    </div>
                 </form>
                 <form action="" class="formulario__login">
                     <h2>Iniciar Sesion</h2>
                     <input type="text" placeholder="Correo Electronico">
-                    <input type="password" placeholder="contraseña">
-                    <button>Entrar</button>
-                    <p >No te acuerdas de tu contraseña? click aqui</p><!--crear html para recuperar contraseña-->
+                    <input type="password" placeholder="Contraseña">
+                    <div class="button-login">
+                        <button>Entrar</button>
+                    </div>
+                    <p >No te acuerdas de tu contraseña? <a style="color:blue" href="terms_conds.html"><br> click aqui</a></p><!--crear html para recuperar contraseña-->
                 </form>
             </div>
         </div>
