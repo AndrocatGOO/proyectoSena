@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Y Registro-Maria Teresa Vahos</title>
     <link rel="stylesheet" href="estilos/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://https://kit.fontawesome.com/a076d05399.js"></script>  <!--ayuda para la topbar-->
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
@@ -13,57 +16,59 @@
     <script src="scripts/validar.js"></script>
 </head>
 <header>
-    <div class="navbar_1">
-        <ul>
-            <img src="https://cdn.discordapp.com/attachments/818636085894053909/818636238247690291/log_nombre_sin_fondo_1k.png" width="80px" height="80px" class="logo">
-            <li class="search-icon">
-                <input type="search" placeholder="search">
-                <span class="bi bi-search"></span>
-            </li>
-            <div class="items">
-                <li><a href="#">Mi cuenta</a></li>
-                <li><a href="#">Carrito</a></li>
-            </div>
-        </ul>
-    </div>
-    <nav role="navigation" class="nav">
-    <ul class="nav-items">
-        <li class="nav-item">
-            <a href="#" class="nav-link"><span>Inicio</span></a>
-        </li>
-        <li class="nav-item dropdown">
-            <a href="#" class="nav-link"><span>Categorias</span></a>
-            <nav class="submenu">
-                <ul class="submenu-items">
-                    <li class="submenu-item"><a href="#" class="submenu-link">categoria #1</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">categoria #2</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">categoria #3</a></li>
-                </ul>
-            </nav>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link"><span>Catalogo</span></a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link"><span>Ofertas</span></a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link"><span>Mi Carrito</span></a>
-        </li>
-        <li class="nav-item dropdown">
-            <a href="#" class="nav-link"><span>MAS</span></a>
-            <nav class="submenu">
-                <ul class="submenu-items">
-                    <li class="submenu-item"><a href="#" class="submenu-link">Compras</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">Ayuda</a></li>
-                    <li class="submenu-item"><hr class="submenu-seperator" /></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">Sobre nosotros</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">Hubicacion</a></li>
-                    <li class="submenu-item"><a href="#" class="submenu-link">terminos y condiciones</a></li>
-                </ul>
-            </nav>
-        </li>
-    </ul>
+    <nav>
+        <div class="navbar_1">
+            <ul>
+                <a href="index.html"><img  class="logo_topbar" src="Imagenes/logo_nenon_topbar.png" width="80px" height="80px" class="logo"></a>
+                <li class="search">
+                    <input type="search" class="buscador" placeholder="search">
+                    <span><a class ="logo_search" href="#"><img class="buscar100px"  src="Imagenes/fonts/buscar100px.png" width="30px" height="30px"></a></span>
+                </li>
+                <div class="items">
+                    <li><a href="#">Mi cuenta</a></li>
+                    <li><a href="#">Carrito</a></li>
+                </div>
+            </ul>
+        </div>
+        <nav role="navigation" class="nav">
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span>Inicio</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link"><span>Categorias</span></a>
+                    <nav class="submenu">
+                        <ul class="submenu-items">
+                            <li class="submenu-item"><a href="#" class="submenu-link">categoria #1</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">categoria #2</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">categoria #3</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span>Catalogo</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span>Ofertas</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><span>Mi Carrito</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link"><span>MAS</span></a>
+                    <nav class="submenu">
+                        <ul class="submenu-items">
+                            <li class="submenu-item"><a href="#" class="submenu-link">Compras</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">Ayuda</a></li>
+                            <li class="submenu-item"><hr class="submenu-seperator" /></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">Sobre nosotros</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">Hubicacion</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">terminos y condiciones</a></li>
+                        </ul>
+                    </nav>
+                </li>
+            </ul>
+        </nav>
     </nav>
 </header>
 <body>
