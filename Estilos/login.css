@@ -19,6 +19,8 @@
 }
 
 body{
+    width: 100%;
+    height: 100%;
     background-image: url(https://inforprintsantander.es/wp-content/uploads/2016/05/Fondo-oscuro-web-inforprint-santander.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,54 +37,101 @@ main{
 
 /*navbar_1*/
 
-.navbar_1{
-    background: var(--gris-oscuro);
-    padding: 10px 10px 10px 10px;
+.contenedor__topbar1{
+    display: flex;
+    background: #252525;
+    width: 100%;
     border: none;
     border-bottom: 2px solid var(--rosa-claro);
+    align-items: center;
+    height: 10vh;
 }
 
-.navbar_1 ul{
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.contenedor__topbar1-logo{
+flex-grow: 1;
 }
 
 .logo_topbar{
-    margin-left: -400px;
+    margin: 20px;
+    height: 80%;
 }
 
-.search{
-    align-items: center;
+.contenedor__topbar1-search{
+    flex-grow: 3;
+    background: #353535;
+    border-bottom : 2px solid var(--rosa-claro);
+    margin-left: 10px;
+    display:flex;
+width: 45vw;
+height: 6vh;
+width: 240px;
 }
 
-.navbar_1 ul li input.buscador{
-    padding: 100px;
+.buscador{
+    height: 6vh;
+    width: 40vw;
+    background: transparent;
+    margin: 0 2vh ;
+    margin-right: 10px;
+    border: transparent;
+    color:white;
+    font-weight: 500;
+    font-size: 15px;
 }
 
-
-.navbar_1 ul li.search{
-    height: 40px;
-    width: 240px;
-    display: flex;
-    background: #f2f2f2;
-    border-radius: 5px;
+.buscador::placeholder{
+    color: #eee;
+    text-align: center;
 }
 
-.navbar_1 ul li.search input{
-    height: 100%;
-    width: 200px;
+.buscador:focus{
+outline: none;
+background: transparent;
+}
+
+.contenedor__logo-search{
+    color: white;
+    background: transparent;
     border: none;
+    padding: auto;
+    padding: 2vh 2vw;
+    font-size: 2vh;
+    font-weight: 100;
+}
+
+.contenedor__logo-search:focus{
     outline: none;
-    padding: 0px 10px;
-    border-radius: 5px 0 0 5px;
-    color: rgb(255, 255, 255);
+    background-color: transparent ;
+    color: rgb(255, 0, 191);
 }
 
 
-/*navbar 2*/
+
+
+.contenedor__topbar1-items{
+    width: 20vh;
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+}
+
+.topbar-perfil{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2vw;
+
+}
+
+.topbar-user{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2vw;
+}
+
+/*navbar 2 */
 
 html {
     box-sizing: border-box;
@@ -99,10 +148,11 @@ body {
 }
 
 .nav {
-    width: 550px;
     margin: 100px auto 0 auto;
     text-align: center;
 }
+
+
 
 /* Navigation */
 
@@ -272,12 +322,8 @@ body {
 
 
 
-/*body*/
+/*body
 
-.header{
-    height: 100px;
-    color: #a00098;
-}
 
 .contenedor__todo{
 width: 100%;
@@ -329,9 +375,11 @@ background: rgb(255, 255, 255);
 color: #000000;
 }
 
-/* ---------------formularios------------------- */
+*/
 
-/*color al pasar el mouse el login o register*/
+/* ---------------formularios-------------------*/
+
+/*color al pasar el mouse el login o register
 .contenedor__login-register button:hover{
     background: #00ffe554;
     color:rgb(0, 0, 0);
@@ -443,7 +491,8 @@ color: #000000;
 }
 
 
-/*responsive designe-----------no sirve... aun qwq*/
+
+/*responsive designe-----------no sirve... aun qwq
 
 @media screen and (max-width: 850 px){
     main{
@@ -460,7 +509,7 @@ color: #000000;
         position: absolute;
     }
 
-    /*formulario*/
+
     .contenedor__login-register{
         top: -10px;
         left: -5px;
@@ -470,5 +519,15 @@ color: #000000;
         position: relative;
     }
 }
+*/
+
+@media screen and (max-width: 500px) {
+
+
+    .contenedor__topbar1-logo{
+        display:none;
+    }
+}
+
 
 
