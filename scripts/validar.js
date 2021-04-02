@@ -13,7 +13,6 @@ function validar(){
     usuario = document.getElementById("usuario").value;
     contraseña = document.getElementById("contraseña").value;
     confirmar_contra = document.getElementById("confirmar_contra").value;
-    
     expresion = /\w+@\w+\.+[a-z]/;
 
     if(nombre === " " || apellidos === " " || correo === " " || usuario === " "
@@ -54,4 +53,3 @@ function validar(){
         return false;
     }
 }
-  
