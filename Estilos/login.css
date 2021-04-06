@@ -338,7 +338,7 @@ body {
 
 
 
-/*body
+/*body*/
 
 
 .contenedor__todo{
@@ -391,11 +391,11 @@ background: rgb(255, 255, 255);
 color: #000000;
 }
 
-*/
+
 
 /* ---------------formularios-------------------*/
 
-/*color al pasar el mouse el login o register
+/*color al pasar el mouse el login o register*/
 .contenedor__login-register button:hover{
     background: #00ffe554;
     color:rgb(0, 0, 0);
@@ -508,7 +508,7 @@ color: #000000;
 
 
 
-/*responsive designe-----------no sirve... aun qwq
+/*responsive designe-----------no sirve... aun qwq*/
 
 @media screen and (max-width: 850 px){
     main{
@@ -535,7 +535,7 @@ color: #000000;
         position: relative;
     }
 }
-*/
+
 
 @media screen and (max-width: 500px) {
 
